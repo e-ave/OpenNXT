@@ -72,6 +72,19 @@ fun ByteBuffer.skip(bytes: Int) {
     position(position() + bytes)
 }
 
+fun ByteBuffer.getUnsignedShort(): Int {
+    return short.toInt() and 0xffff
+}
+fun ByteBuffer.getSignedShort(): Int {
+    return short.toInt()
+}
+fun ByteBuffer.getUnsignedByte(): Int {
+    return get().toInt() and 0xff
+}
+fun ByteBuffer.getSignedByte(): Int {
+    return get().toInt()
+}
+
 fun ByteBuffer.getSmartInt(): Int {
     if (get(position()).toInt() < 0) {
         return int and 0x7fffffff

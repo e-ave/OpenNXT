@@ -1,5 +1,6 @@
 package com.opennxt.filesystem
 
+import com.opennxt.resources.Js5Archive
 import java.nio.ByteBuffer
 import java.nio.file.Path
 
@@ -19,6 +20,9 @@ abstract class Filesystem(val path: Path) {
 
     abstract fun createIndex(id: Int)
 
+    fun getReferenceTable(index: Js5Archive, ignoreChecked: Boolean = false): ReferenceTable? {
+        return getReferenceTable(index.archiveId, ignoreChecked)
+    }
     fun getReferenceTable(index: Int, ignoreChecked: Boolean = false): ReferenceTable? {
         val cached = cachedReferenceTables[index]
         if (cached != null) return cached

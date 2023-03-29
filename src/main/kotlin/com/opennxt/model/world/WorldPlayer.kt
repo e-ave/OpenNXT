@@ -23,7 +23,6 @@ import com.opennxt.net.game.serverprot.ServerTickEnd
 import com.opennxt.net.game.serverprot.variables.ResetClientVarcache
 import com.opennxt.net.login.LoginPacket
 import com.opennxt.net.proxy.UnidentifiedPacket
-import com.sun.org.apache.xpath.internal.operations.Bool
 import io.netty.buffer.Unpooled
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap
 import mu.KotlinLogging
