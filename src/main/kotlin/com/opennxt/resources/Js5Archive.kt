@@ -46,7 +46,7 @@ enum class Js5Archive(
     JS5_LOADING_SPRITES_RAW(34, "client.loadingspritesraw.js5", false, false, false),
     JS5_CUTSCENES(35, "client.cutscenes.js5", true, false, false),
     JS5_BROWSERADS(36, "client.adverts.js5", false, false, false),
-    JS5_TEXTURES_HDR(37, "client.textures.hdr.js5", false, false, false),
+    JS5_GFX_CONFIG(37, "client.client.gfxconfigs.js5", false, false, false),
     JS5_AUDIOSTREAMS(40, "client.audiostreams", false, false, true),
     JS5_WORLDMAPAREADATA(41, "client.worldmapareas.js5", false, false, false),
     JS5_WORLDMAPLABELS(42, "client.worldmaplabels.js5", false, false, false),
