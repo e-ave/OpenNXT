@@ -22,7 +22,7 @@ enum class Js5ConfigGroup (
     CHATPHRASETYPE(27, ".chatphrase", true),
     CHATCATTYPE(28, ".chatcat", true),
     SKYBOX(29, ".skybox"),
-    SUN(30, ".sun"),
+    SKYDECORTYPE(30, ".skydecor"),// was sun, assuming it matches the leaked scriptvartype SKYDECOR
     LIGHTTYPE(31, ".light"),
     BASTYPE(32, ".bas"),
     CURSORTYPE(33, ".cursor"),
